@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+body{
+    background-color: steelblue;
+    overflow: hidden;
+}
+
+
+
+
+.pantalla>input{
+    
+    width: 100%;
+    height: 25%;
+    font-size: 5em;
+    text-align: right;
+    background-color: darkblue;
+    
+}
+
+
+
+
+.botones{
+    
+    width: 120%;
+    height: 187%;
+    
+    
+    
+}
+
+button{
+    background-color: black;
+    width: 20%;
+    height: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: inherit;
+    font-size: 4em;
+    color: aliceblue;
+}

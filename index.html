@@ -1,0 +1,76 @@
+<html>
+    
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link type="text/css" href="estilos.css" rel="stylesheet">
+    </head>
+
+    
+    <body>
+        <div class="pantalla">
+        <input type="text" placeholder="..." id="pantalla">
+    
+    
+        </div>
+    
+        
+        
+        
+        
+        
+    <div class="botones">
+        <button onclick="agregar('7')">7</button>
+        <button onclick="agregar('8')">8</button>
+        <button onclick="agregar('9')">9</button>
+        <button onclick="agregar('+')">+</button>
+        
+        
+        <button onclick="agregar('4')">4</button>
+        <button onclick="agregar('5')">5</button>
+        <button onclick="agregar('6')">6</button>
+        <button onclick="agregar('-')">-</button>
+        
+        
+        <button onclick="agregar('1')">1</button>
+        <button onclick="agregar('2')">2</button>
+        <button onclick="agregar('3')">3</button>
+        <button onclick="agregar('*')">*</button>
+        
+        <button class ="Control" onclick="borrar()">C</button>
+        <button onclick="agregar('0')">0</button>
+        <button onclick="agregar('.')">.</button>
+        <button class="control" onclick="igual()">=</button>
+        
+        
+        </div>
+        
+        
+        <script>
+            
+          function agregar(caracter){
+              document.getElementById('pantalla').value+=caracter;
+              
+          }
+            function borrar(){
+                document.getElementById('pantalla').value="";
+            }
+            
+            function igual (){
+                cadena = document.getElementById('pantalla').value;
+                if(cadena == '007'){
+                    
+                    window.location.assign('codigo.html');
+                }
+                total = eval(cadena);
+                document.getElementById('pantalla').value=total;
+            }
+        
+            
+            
+        </script>
+    
+    </body>
+
+
+</html>
